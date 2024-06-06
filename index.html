@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" contnte="widht=device-width, initial-scale=1.0">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet"> 
+    <title>Document</title>
+</head>
+<body>
+        <div class="logo">
+            <img src="img/Fichier 2-8 1.png" alt="">
+        </div>    
+
+        <div class="container">
+            <h1 id="title">Calculatrice prêt immobilier</h1>
+            <div class="info">
+                <div class="input-group">
+                    <label id="name" for="amount">Montant emprunté</label>
+                    <div class="bord">
+                        <input id="amount" type="number" placeholder="100 000" required>
+                        <span style="color:white">€</span>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label id="name"  for="level">Taux nominal</label>
+                    <div class="bord">
+                        <input id="level" type="number" step="0.01" placeholder="1.2" required>
+                        <span style="color:white">%</span>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label id="name" for="time">Durée de remboursement</label>
+                    <div class="bord">
+                        <input id="time" type="number" placeholder="15" required>
+                        <span style="color:white">an(s)</span>
+                    </div>
+                </div>
+            </div>
+            <form action="submit">
+                <button id="calculator">Calculer</button>
+            </form>
+        </div>
+</body>
+</html>
+

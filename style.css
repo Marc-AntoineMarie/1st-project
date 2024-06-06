@@ -1,0 +1,69 @@
+body {
+    font-family: "Nunito Sans", sans-serif;
+    color: #234B68;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #234B68;
+    padding: 20px;
+    width: 800px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.bord {
+    border: 1px solid #234B68;
+    background-color: #234B68;
+    padding-right: 20px;
+}
+
+.input-group input {
+    padding: 5px;
+    font-size: 1em;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+/* #name {
+    margin-right: 100px;
+} */
+
+#calculator {
+    display: inline-block;
+    background-color: #234B68;
+    border: #234B68;
+    border-radius: 5px;
+    color: #eeee;
+    padding: 10px 50px;
+}
