@@ -36,6 +36,7 @@ body {
     align-items: center;
     gap: 40px;
     width: 100%;
+    margin-right: 90px ;
     
 }
 
@@ -67,4 +68,34 @@ button {
 .left.pc {
     text-align: left;
 }
+
+.right input { 
+    height: 27.5px; 
+    width: 50%;
+}
+.right {
+    display: flex;
+}
+
+.right span {
+    width: 15%;
+}
+
+input {
+    width: 85%;
+}
+
+.right.pc span {
+    background-color: #1d3557;
+    color: #fff;
+    padding: 10px;
+    border-radius: 0 5px 5px 0; 
+    margin-left: -5px;
+    
+}
+
+    
+
+
+
 
