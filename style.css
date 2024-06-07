@@ -43,6 +43,7 @@ body {
 .input-group input {
     padding: 5px;
     font-size: 1em;
+    border: #FF822E;
 }
 
 button {
@@ -94,8 +95,26 @@ input {
     
 }
 
+#calculator:hover {
     
+    background-color: #29517F; /* On modifie la couleur du fond au passage de la souris */
+    transform: scale(1.1);
 
+}
 
+::placeholder {
+    opacity: 0.6;
+}
 
+.error_txt {
+    color: #FF822E;
+    text-align: left;
+    width: 83.1%;
+    height: 65px;
+    font-size: 12px;
+    margin-top: 20px;
+}
 
+.error {
+    border: #FF822E;
+}

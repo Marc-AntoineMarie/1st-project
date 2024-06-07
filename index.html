@@ -10,46 +10,65 @@
     <title>Document</title>
 </head>
 <body>
-        <div class="logo">
-            <img src="img/Fichier 2-8 1.png" alt="">
-        </div>    
+    <div class="logo">
+        <img src="img/Fichier 2-8 1.png" alt="">
+    </div>    
 
-        <div class="container">
-            <h1 id="title">Calculatrice prêt immobilier</h1>
-            <div class="info">
-                <div class="input-group">
-                    <div class="left pc">
-                        <label id="name" for="amount">Montant emprunté</label>
-                    </div>
-                    <div class="right pc">
-                        <input id="amount" type="number" placeholder="100 000" required>
-                        <span>€</span>
-                    </div>
+    <div class="container">
+        <h1 id="title">Calculatrice prêt immobilier</h1>
+        <div class="info">
+            <div class="input-group error">
+                <div class="left pc">
+                    <label id="name" for="amount">Montant emprunté</label>
                 </div>
-                <div class="input-group">
-                    <div class="left pc">
-                        <label id="name"  for="level">Taux nominal</label>
-                    </div>
-                    
-                        <div class="right pc">
-                            <input id="level" type="number" step="0.01" placeholder="1.2" required>
-                            <span>%</span>
-                        </div>
-                </div>
-                <div class="input-group">
-                    <div class="left pc">
-                        <label id="name" for="time">Durée de remboursement</label>
-                    </div>
-                        <div class="right pc">
-                            <input id="time" type="number" placeholder="15" required>
-                            <span>an(s)</span>
-                        </div>
+                <div class="right pc">
+                    <input id="amount" type="number" placeholder="100 000" required>
+                    <span>€</span>
                 </div>
             </div>
-            <form action="submit">
-                <button id="calculator">Calculer</button>
-            </form>
+            <div class="input-group">
+                <div class="left pc">
+                    <label id="name"  for="level">Taux nominal</label>
+                </div>
+                <div class="right pc">
+                    <input id="level" type="number" step="0.01" placeholder="1.2" required>
+                    <span>%</span>
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="left pc">
+                    <label id="name" for="time">Durée de remboursement</label>
+                </div>
+                <div class="right pc">
+                    <input id="time" type="number" placeholder="15" required>
+                    <span>an(s)</span>
+                </div>
+            </div>
         </div>
+        <div class="error_txt">
+            <h3>Veuillez remplir tous les champs !</h3>
+        </div>
+        <form action="submit">
+            <button id="calculator">Calculer</button>
+        </form>
+    </div>
+
+    <div class="tabl_container">
+        <h1 id="title">Tableau d'amortissement</h1>
+        
+        <form action="submit">
+            <button id="PDF">Télécharger en PDF</button>
+        </form>
+        <div class="bandeau">
+            <h3>Mois</h3>
+            <h3>Solde initial</h3>
+            <h3>Echéance</h3>
+            <h3>Intérêts</h3>
+            <h3>amortissement</h3>
+            <h3>Solde restant</h3>
+            <!-- faire des flex box pour gerer la position et les espaces -->
+        </div>
+    </div>
 </body>
 </html>
 
