@@ -1,6 +1,8 @@
 const number = document.querySelector("#calculator");
 
-number.addEventListener("click", function() {
+number.addEventListener("click", function(event) {
+
+    event.preventDefault();
 
     let stchamp =  document.querySelector("#amount").value;
     let ndchamp =  document.querySelector("#level").value;
@@ -19,5 +21,4 @@ number.addEventListener("click", function() {
         document.getElementById("error_txt").textContent = "";
     }
 });
-
 
