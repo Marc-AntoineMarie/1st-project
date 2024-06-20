@@ -10,21 +10,36 @@ function isLowerthan (value) {
     return parseFloat(value) < 999999999999;
 }
 
-function isValidNumber (value) {
-    return Number.isInteger(value)
-}  
+// function isValidNumber (value) {
+//     return Number.isInteger((value))
+// }  
+
+
+function isValidInt(value) {
+    if (!isNaN(parseInt(value, 10)) && typeof value !== 'string') {
+        return true;
+    } 
+    else {
+        return false;
+    }
+}
+
+function isValidFloat(value) {
+    return (value % 1 !== 0);
+}
 
 function verifamount(value) {
 
-    if (isEmpty(value) && isGreaterthan(value) && isLowerthan(value) && isValidNumber (value)) {
+    if (isEmpty(value) && isGreaterthan(value) && isLowerthan(value) && isValidInt(value) && !isValidFloat(value)) {
         return true
     }
     else {
         return false
     }
-
 }
 
+
+// console.log(verifamount(10000));
 
 
 
@@ -43,8 +58,13 @@ number.addEventListener("click", function (event) {
     let parsechampnd = parseInt(ndchamp);
     let parsechampth = parseInt(thchamp);
 
+    // let type = typeof parsechampst
+
+    // console.log(type)
+
+    // console.log(parsechampst)
+
     console.log(verifamount(parsechampst));
-  
 });
 
 
