@@ -12,15 +12,11 @@ function isLowerthan (value) {
 
 function isValidNumber (value) {
     return Number.isInteger(value)
-}
-
-function isValidFloat(value) {
-    return (value % 1 !== 0);
-}
+}  
 
 function verifamount(value) {
 
-    if (isEmpty(value) && isGreaterthan(value) && isLowerthan(value) && isValidNumber (value) && isValidFloat(value)) {
+    if (isEmpty(value) && isGreaterthan(value) && isLowerthan(value) && isValidNumber (value)) {
         return true
     }
     else {
@@ -28,6 +24,9 @@ function verifamount(value) {
     }
 
 }
+
+
+
 
 const number = document.querySelector("#calculator");
 number.addEventListener("click", function (event) {
